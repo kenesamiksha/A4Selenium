@@ -1,0 +1,21 @@
+package orgbatchExceutionClasses;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class One8 {
+	@Test
+	public void launchOne8() {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://one8.com/");
+		Reporter.log("one8 is launched", true);
+		driver.quit();
+		
+		
+	}
+	
+
+}
